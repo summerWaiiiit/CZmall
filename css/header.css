@@ -1,0 +1,222 @@
+/**头部样式*/
+header,
+header .nav-top ,
+header .nav-sub {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1220px !important;
+}
+.navbar-nav {
+    flex-direction: row;
+    padding-left: 10px;
+}
+.navbar-nav li {
+    padding: 10px;
+}
+/*上导航栏*/
+header .nav-top {
+    background: linear-gradient(90deg,#222325,#3b3c3f,#222325);
+    height: 45px;
+    width: 100%;
+    line-height: 10px;
+}
+.nav-top .nav-logo {
+    background: url(../img/index/images/logo.png) no-repeat center;
+    text-indent: -9999px;
+    width: 18px;
+    height: 18px; 
+    background-size: contain;
+}
+.nav-top .navbar-nav .nav-item a.nav-link{
+    color: hsla(0,0%,100%,.7);
+    font-weight: 700;
+}
+.nav-top .navbar-nav .nav-item a.nav-link:hover {
+    color:#ececec;
+}
+.nav-top .navbar-nav .nav-item.active a.nav-link {
+    color:#ececec;
+}
+.nav-user,
+.nav-cart {
+    background: url(../img/index/images/avatar-and-cart.png) no-repeat 96% 0;
+    width: 20px;
+    height: 20px;
+    background-size: 192%;
+    position: relative;
+}
+.nav-user > a,
+.nav-cart > a {
+    text-indent: -9999px;
+}
+.nav-cart {
+    background: url(../img/index/images/avatar-and-cart.png) no-repeat 96% 101%;
+    background-size: 192%;
+} 
+.navbar-nav .nav-cart .cart ,
+.navbar-nav .nav-user .user{
+     width: 20px;
+     height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.navbar-nav .nav-user .nav-user-list {
+    width: 170px;
+    height: 398px;
+    padding-top: 18px;
+    position: absolute;
+    top: 18px;
+    right: -18px;
+    display: none;
+    z-index: 999;
+}
+.nav-user .nav-user-list .list {
+    position: absolute;
+    top: 18px;
+    right: 0px;
+    width: 100%;
+    height: 380px;
+    padding-top: 20px;
+    background-color: #fff;
+    border:1px solid #d6d6d6;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-user-list .list .nav-user-avatar {
+    height: 72px;
+    text-align: center;
+}
+.nav-user-avatar img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.nav-user-avatar h6 {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.nav-user-list .list ul a {
+    display: block;
+    border-top: 1px solid #f5f5f5;
+    height: 45px;
+    line-height: 45px;
+    font-size: 12px;
+    color: #616161;
+}
+.nav-user-list .list ul a .fa {
+    text-align: center;
+    width: 54px;
+    color: #999797;
+}
+
+.nav-user:hover {
+    background: url(../img/index/images/avatar-and-cart.png) no-repeat 2% 0;
+    background-size: 192%;
+}
+.nav-cart:hover {
+    background: url(../img/index/images/avatar-and-cart.png) no-repeat 2% 101%;
+    background-size: 192%;
+}
+.nav-cart .nav-cart-wrapper {
+    width: 360px;
+    height: 352px;
+    padding-top: 20px;
+    position: absolute;
+    top: 19px;
+    right: -17px;
+    display: none;
+}
+.active{
+    display: block !important;
+}
+.nav-cart .nav-cart-wrapper .nav-cart-page{
+    position: absolute;
+    width: 360px;
+    height: 332px;
+    right: 0;
+    top: 12px;
+    padding-top: 95px;
+    background-color: #f9f9f9;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.05), 0 3px 8px rgba(0,0,0,.1);
+    z-index: 999;
+}
+.nav-cart .nav-cart-wrapper h3{
+    font-size: 18px;
+    color: #333;
+    padding-top: 25px;
+}
+.nav-cart .nav-cart-wrapper p {
+    padding-top: 25px;
+    font-size: 12px;
+    color: #bcbcbc;
+}
+
+/* 下导航栏 */
+header  .nav-sub {
+    width: 100%;
+    height: 75px;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,.05);
+}
+
+header  .nav-sub .container {
+    height: 28px;
+}
+header  .nav-sub ul.navbar-nav {
+    width: 785px;
+}
+header  .nav-sub ul.navbar-nav .nav-item .nav-link:hover{
+    color: #00A1E9;
+}
+header  .nav-sub  .form-inline {
+    position: relative;
+}
+.nav-sub  .form-inline .fa {
+    font-size: 18px;    
+    color: #bcbcbc;
+    border: 1px;
+    position: absolute;
+    left: 40px;
+}
+header  .nav-sub  .form-inline .form-control {
+    width: 330px !important;
+    height: 32px;
+    border-radius: 20px;
+    margin-left: 30px;
+    padding-left: 42px;
+}
+.form-inline .form-control::-webkit-input-placeholder{
+    color: #ccc;
+    font-size: 12px;
+}
+
+/* 导航栏固定 */
+header .nav-sub.fix-nav-sub {
+    height: 61px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+/* 商品结算固定栏 ????页面高度怎么获取？？？ */
+#fix-bottom-bar {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
